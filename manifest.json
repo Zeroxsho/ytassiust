@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "YouTube Share Link Extractor",
+  "version": "1.0",
+  "permissions": ["tabs", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_title": "Extract YouTube Share Links"
+  }
+}
